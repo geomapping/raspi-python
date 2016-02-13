@@ -1,1 +1,1 @@
-# raspi-python
+# raspi-pythn ethält Praktikumsarbeiten
