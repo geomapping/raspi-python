@@ -1,0 +1,17 @@
+from sense_hat import SenseHat import random
+
+sense = SenseHat()
+
+while True:
+    x, y, z = sense.get_accelerometer_raw().values()
+
+    x = abs(x)
+    y = abs(y)
+    z = abs(z)
+
+    
+    
+    if x > 1 or y > 1 or z > 1:
+        sense.show_letter(random.randint(1,6),text_colour=[255,0,0])
+
+  
