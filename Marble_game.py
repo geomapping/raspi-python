@@ -55,11 +55,9 @@ def check_win(x,y):
 
 def init():
     global maze
-    print ("init")
     random_x = randint(1,6)
     random_y = randint(1,6)
     while maze[random_y][random_x] == r or (random_y==1 and random_x==1) :
-        print (random_y,random_x)
         random_x = randint(1,6)
         random_y = randint(1,6)
     maze[random_y][random_x] = g
